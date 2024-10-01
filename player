@@ -1,0 +1,33 @@
+int x=160;
+int y=160;
+
+void main() {
+  animate(ejecutar);
+ 
+}
+void ejecutar(){
+  player();
+  controles();
+}
+void player(){
+  background(0,0,0);
+  ellipse(x,y,10,15);
+}
+void controles() {
+  if(keyPressed && key=="up") {
+    print("u");
+      y = y -1;
+  }
+    if(keyPressed && key=="down") {
+      print("d");
+      y = y +1;
+    }
+  if(keyPressed && key=="left") {
+      print("l");
+      x = x -1;
+    }
+  if(keyPressed && key=="right") {
+      print("dr");
+      x = x +1;
+    }
+}

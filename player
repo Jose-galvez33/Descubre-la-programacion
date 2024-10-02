@@ -1,4 +1,4 @@
-int x=160;
+int x=160; 
 int y=160;
 
 void main() {
@@ -8,26 +8,40 @@ void main() {
 void ejecutar(){
   player();
   controles();
+  dibuja();
 }
 void player(){
   background(0,0,0);
   ellipse(x,y,10,15);
+  if(x<=20 || x>=300 || y<=20 || y>=300){
+    x=160;
+    y=160;}
+}
+void dibuja(){
+  fill(0,255,0);
+    rect(0,0,320,20);
+    fill(0,255,0);
+    rect(0,300,320,20);
+  fill(0,255,0);
+    rect(0,0,20,320);
+  fill(0,255,0);
+    rect(300,0,20,320);
 }
 void controles() {
   if(keyPressed && key=="up") {
     print("u");
-      y = y -1;
+      y = y -53;
   }
     if(keyPressed && key=="down") {
       print("d");
-      y = y +1;
+      y = y +53;
     }
   if(keyPressed && key=="left") {
       print("l");
-      x = x -1;
+      x = x -53;
     }
   if(keyPressed && key=="right") {
       print("dr");
-      x = x +1;
+      x = x +53;
     }
 }

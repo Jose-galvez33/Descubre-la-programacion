@@ -1,0 +1,13 @@
+int t1 = millis()/1000;
+void main(){
+  animate(ejecutar);
+}
+void ejecutar(){
+  int a = t1 - millis()/1000;
+  println ("milis-t1 "+ a );
+  if(a<=-3){
+    t1=millis()/1000;
+    a = t1 - millis()/1000;
+    background(random(256),random(256),random(256));
+  }
+}

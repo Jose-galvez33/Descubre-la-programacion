@@ -30,18 +30,18 @@ void dibuja(){
 void controles() {
   if(keyPressed && key=="up") {
     print("u");
-      y = y -53;
+      y = y -10;
   }
     if(keyPressed && key=="down") {
       print("d");
-      y = y +53;
+      y = y +10;
     }
   if(keyPressed && key=="left") {
       print("l");
-      x = x -53;
+      x = x -10;
     }
   if(keyPressed && key=="right") {
       print("dr");
-      x = x +53;
-    }
-}
+      x = x +10;
+  }}
+

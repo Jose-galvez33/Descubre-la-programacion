@@ -87,16 +87,16 @@ void fondo2() {
 }
 
 void fondo3() {
-  background(0,255,255);
+  background(0,50,50);
   text("Seleccionar: LeftButton",70,140);
-  fill(84,14,116);
+  fill(84,250,250);
   text("Salir: RightButton",90,170);
-  fill(84,14,116);
+  fill(84,250,250);
   salir();
   }
 
 void fondo4() {
-  background(0,178,215);
+  background(0,50,50);
   text("rank",60,60);
   salir();
  }

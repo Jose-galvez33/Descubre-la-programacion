@@ -101,10 +101,6 @@ void fondo4() {
   salir();
  }
 
-void name() {
-  
-}
-
 void player() {
   background(255,255,255);
  image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(9).png?raw=true",x,y,40,40);

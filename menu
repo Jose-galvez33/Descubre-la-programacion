@@ -116,11 +116,9 @@ void controles() {
   if (keyPressed && key=="w") {
     y = y -4;}
   if (keyPressed && key=="s") {
-    background(255,255,255);
     image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(10).png?raw=true",x,y,40,40);
     y = y +4;}
   if (keyPressed && key=="a") {
-    background(255,255,255);
     image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(10).png?raw=true",x,y,40,40);
     x = x -4;}
   if (keyPressed && key=="d") {

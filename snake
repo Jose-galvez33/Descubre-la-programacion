@@ -1,0 +1,153 @@
+int x= 160;
+int y= 160;
+
+void main() {
+ animate (ejecutar);
+}
+
+void ejecutar() {
+  fondo();
+  control();
+  play();
+}
+
+
+void fondo() {
+ image("https://imgcdn.stablediffusionweb.com/2024/4/14/8310c24a-bab9-43ca-b625-db7f766ff6c5.jpg",0,0,320,320);
+ image("https://raw.githubusercontent.com/Jose-galvez33/Descubre-la-programacion/853eb93fa2799d747c4eda594e0fe9cb3acd2b72/IMAGEN/play.png",65,25,200,180);
+ image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(1).png?raw=true",65,170,200,180);
+ image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(3).png?raw=true",-26,247,100,100);
+ image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(5).png?raw=true",-20,190,100,100);
+}
+  void control() { 
+  print("X: " +mouseX);
+  println("Y: " +mouseY);
+  if (mouseX >82 && mouseX <250)
+    if (mouseY >80 && mouseY <135) { 
+    image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0.png?raw=true",65,25,200,180);
+  }
+  if (mouseX >80 && mouseX <250)
+    if (mouseY >225 && mouseY <275) { 
+  image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(2).png?raw=true",65,170,200,180);
+    }
+   if (mouseX >6 && mouseX <45)
+    if (mouseY >270 && mouseY <310) {
+  image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(4).png?raw=true",-26,247,100,100); 
+   }
+  if (mouseX >6 && mouseX <55)
+    if (mouseY >227 && mouseY <257) { 
+    image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(6).png?raw=true",-20,190,100,100);
+   } }
+
+void play() {
+   if (mousePressed)
+  if (mouseX >82 && mouseX <250)
+    if (mouseY >80 && mouseY <135)
+    if(mousePressed) {
+    if(mouseButton == LEFTBUTTON){
+      animate(fondo1);
+    } } 
+  if (mousePressed)
+  if (mouseX >82 && mouseX <250)
+    if (mouseY >225 && mouseY <275)
+    if(mousePressed) {
+    if(mouseButton == LEFTBUTTON){
+      animate(fondo2);
+}  }  
+  if (mousePressed)
+  if (mouseX >6 && mouseX <45)
+    if (mouseY >270 && mouseY <310)
+    if(mousePressed) {
+    if(mouseButton == LEFTBUTTON){
+      animate(fondo3);
+}  }
+  if (mousePressed)
+  if (mouseX >6 && mouseX <55)
+    if (mouseY >227 && mouseY <257)
+    if(mousePressed) {
+    if(mouseButton == LEFTBUTTON){
+      animate(fondo4);
+}  }  }
+ 
+  void fondo1() {
+    animate (pueblo);
+    if (mousePressed)
+  if (mouseX >5 && mouseX <40)
+    if (mouseY >5 && mouseY <40)
+    if(mousePressed) {
+    if(mouseButton == LEFTBUTTON){
+    animate(ejecutar);
+    }  } }
+
+void fondo2() {
+  background(255,255,255);
+  text("By Jose De Huevo",75,140);
+  fill(0,0,0);
+  salir();
+}
+
+void fondo3() {
+  background(0,50,50);
+  text("Seleccionar: LeftButton",70,140);
+  fill(84,250,250);
+  text("Salir: RightButton",90,170);
+  fill(84,250,250);
+  salir();
+  }
+
+void fondo4() {
+  background(0,50,50);
+  text("rank",60,60);
+  salir();
+ }
+
+void pueblo() {
+  image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/gim%202.jpg?raw=true",0,0,325,325);
+  player();
+  if (x<20)
+    if(y>20 && y<200) {
+    animate(barco);}
+}
+void barco() {
+  background(5,5,5);
+  player();
+ 
+}
+void player() {
+ image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(9).png?raw=true",x,y,20,20);
+  controles();
+  salir();
+}
+
+void controles() {
+  if (keyPressed && key=="w") {
+    y = y -4;}
+  if (keyPressed && key=="s") {
+    image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(10).png?raw=true",x,y,20,20);
+    y = y +4;}
+  if (keyPressed && key=="a") {
+    image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(10).png?raw=true",x,y,20,20);
+    x = x -4;}
+  if (keyPressed && key=="d") {
+    x = x +4;}
+  if (y<-75){
+    y=320;}
+  if (x<-65){
+    x=320;}
+  if (y > 320){
+    y=-70;}
+  if (x > 320){
+    x=-65;}
+}
+void salir(){
+    image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(7).png?raw=true",-35,-37,120,120);
+  if (mouseX >5 && mouseX <40)
+    if (mouseY >5 && mouseY <40)
+    image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(8).png?raw=true",-35,-37,120,120);
+    if (mousePressed)
+  if (mouseX >5 && mouseX <40)
+    if (mouseY >5 && mouseY <40)
+    if(mousePressed) {
+    if(mouseButton == RIGHTBUTTON){
+      animate(ejecutar);
+    } } }

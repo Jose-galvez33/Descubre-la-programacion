@@ -93,14 +93,14 @@ void fondo4() {
   salir();
  }
 void pueblo() {
-  image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/gim%202.jpg?raw=true",0,0,325,325);
+  image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/gim%202.jpg?raw=true",0,0,360,325);
   player();
-  if (x<20)
+  if (x<1)
     if(y>20 && y<200) {
     animate(barco);}
 }
 void barco() {
-  background(5,5,5);
+  image("https://raw.githubusercontent.com/Jose-galvez33/Descubre-la-programacion/9db945f3565074f8a06d312a164ce4e5f02aa282/IMAGEN/arco.png",0,0,325,325);
   player();
  
 }

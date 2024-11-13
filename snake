@@ -15,6 +15,10 @@ void fondo() {
  image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(3).png?raw=true",-26,247,100,100);
  image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(5).png?raw=true",-20,190,100,100);
 }
+ void cordenadas() { 
+  print("X: " +mouseX);
+  println("Y: " +mouseY);
+ }
   void control() { 
   print("X: " +mouseX);
   println("Y: " +mouseY);
@@ -95,8 +99,8 @@ void fondo4() {
 void pueblo() {
   image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/gim%202.jpg?raw=true",0,0,360,325);
   player();
-  if (x<1)
-    if(y>20 && y<200) {
+  if (x<0)
+    if(y>176 && y<210) {
     animate(barco);}
 }
 void barco() {
@@ -108,6 +112,7 @@ void player() {
  image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(9).png?raw=true",x,y,20,20);
   controles();
   salir();
+  cordenadas();
 }
 void controles() {
   if (keyPressed && key=="w") {

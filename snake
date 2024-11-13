@@ -99,10 +99,25 @@ void fondo4() {
 void pueblo() {
   image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/gim%202.jpg?raw=true",0,0,360,325);
   player();
-  if (x<0)
-    if(y>176 && y<210) {
-    animate(barco);}
-}
+    if(x<10 && x >-100 && y>176 && y<210) {
+     background(0,0,0);
+      fill(0,0,250);
+      text("keep you waiting, uh?",80,150);
+      fill(250,0,0);
+      text("Nuh uh",190,50);
+      text("+escape",180,80);
+      fill(0,255,0);
+      text("duh uh",100,50);
+    text("+enter",90,80); 
+    if(keyPressed && key =="Enter"){
+    animate(barco);
+      x = 290; y = 201;
+      println("duh uh");
+    } 
+     if(keyPressed && key =="Escape"){
+  animate(pueblo);
+      println("nuh uh");
+     }}}
 void barco() {
   image("https://raw.githubusercontent.com/Jose-galvez33/Descubre-la-programacion/9db945f3565074f8a06d312a164ce4e5f02aa282/IMAGEN/arco.png",0,0,325,325);
   player();

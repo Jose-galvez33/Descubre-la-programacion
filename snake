@@ -1,3 +1,4 @@
+ 
 int x= 202;
 int y= 84;
 void main() {
@@ -98,9 +99,8 @@ void fondo4() {
  }
 void pueblo() {
   image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/gim%202.jpg?raw=true",0,0,360,325);
-  player();
-  tienda();
-    if(x<10 && x >-100 && y>176 && y<210) {
+ animate(pueblob);
+    if(x<50 && x >-100 && y>176 && y<210) {
       fill(0,0,250);
       text("keep you waiting, uh?",80,150);
       fill(0,255,0);
@@ -111,13 +111,96 @@ void pueblo() {
       x = 290; y = 201;
       println("duh uh");
     } }}
+
+void pueblob(){
+   image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/gim%202.jpg?raw=true",0,0,360,325);
+  player();
+  tienda();
+  if(x==23){
+    x=30;}
+  if(x==314){
+    x=304;}
+  if(y==24){
+    y=34;}
+  if(y==307){
+    y=297;}
+   if(x<50 && x >-100 && y>176 && y<210) {
+      fill(0,0,250);
+      text("keep you waiting, uh?",80,150);
+      fill(0,255,0);
+      text("duh uh",100,50);
+    text("+enter",90,80); 
+    if(keyPressed && key =="Enter"){
+    animate(barco);
+      x = 290; y = 201;
+      println("duh uh");
+    } }}
+  
       
 void barco() {
   image("https://raw.githubusercontent.com/Jose-galvez33/Descubre-la-programacion/9db945f3565074f8a06d312a164ce4e5f02aa282/IMAGEN/arco.png",0,0,325,325);
-  player();}
- 
+  animate(murob);
+
+  rect(1,0,400,150);
+  
+  
+}
+void murob(){
+ image("https://raw.githubusercontent.com/Jose-galvez33/Descubre-la-programacion/9db945f3565074f8a06d312a164ce4e5f02aa282/IMAGEN/arco.png",0,0,325,325);
+  rect(1,0,400,150);
+  player();
+  tienda2();
+  if (y==150){
+    y=160;}
+  if(y==270){
+    y=260;}
+  if(x==5){
+    x=15;}
+  if(x==319){
+    x=309;}
+  }
+  
+  
+
   void tienda() {
     if(x<200 && x >158 && y>152 && y<185) {
+      fill(0,0,250);
+      text("keep you waiting, uh?",80,150);
+      fill(0,255,0);
+      text("duh uh",100,50);
+    text("+enter",90,80); 
+    if(keyPressed && key =="Enter"){
+    animate(hospital);
+      x = 160; y = 270;
+      println("duh uh");
+    }}}
+void tiendab(){
+   image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/hospital.jpg?raw=true",0,0,325,325);
+player();
+  if(x==70){
+    x=80;}
+  if(x==300){
+    x=290;
+    if(y==310){
+      y=290;}
+    if(y==110){
+      y=120;}
+    }
+if(x<171 && x >150 && y>140 && y<178) {
+      fill(0,0,250);
+      text("You Win",80,150);
+      fill(0,255,0);
+      text("duh uh",100,50);
+    text("+enter",90,80); 
+    if(keyPressed && key =="Enter"){
+    animate(ejecutar);
+      x = 160; y = 270;
+      println("duh uh");
+    }}}
+  
+  
+void tienda2() {
+    if(x<71 && x >1 && y>1 && y<318) {
       fill(0,0,250);
       text("keep you waiting, uh?",80,150);
       fill(0,255,0);
@@ -131,7 +214,7 @@ void barco() {
 
 void hospital() {
   image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/hospital.jpg?raw=true",0,0,325,325);
-player();
+animate (tiendab);
 }
       
 void player() {
@@ -142,15 +225,15 @@ void player() {
 }
 void controles() {
   if (keyPressed && key=="w") {
-    y = y -4;}
+    y = y -1;}
   if (keyPressed && key=="s") {
     image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(10).png?raw=true",x,y,20,20);
-    y = y +4;}
+    y = y +1;}
   if (keyPressed && key=="a") {
     image("https://github.com/Jose-galvez33/Descubre-la-programacion/blob/main/IMAGEN/pixil-frame-0%20(10).png?raw=true",x,y,20,20);
-    x = x -4;}
+    x = x -1;}
   if (keyPressed && key=="d") {
-    x = x +4;}
+    x = x +1;}
   if (y<-75){
     y=320;}
   if (x<-65){
